@@ -1,0 +1,31 @@
+{
+  "name": "vein-mcp",
+  "version": "0.1.0",
+  "description": "矿脉 VEIN — 中文产业事实检索 MCP server（价格/中标/产能/政策，返回带证据的结构化字段）",
+  "type": "module",
+  "bin": {
+    "vein-mcp": "index.js"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "modelscope",
+    "search",
+    "china",
+    "industry",
+    "agent",
+    "llm"
+  ],
+  "license": "SEE LICENSE IN README.md",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
