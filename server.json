@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.qinp38260-boop/vein",
+  "title": "矿脉 VEIN · 中文产业事实检索",
+  "description": "中文产业事实检索（工业品/设备/材料/能源/招投标/上市公司公告）。返回带原文证据的结构化字段：值、单位、证据句、是否可核验；多值清单拆成数组。索引内无答案时明确返回 found=false，不拿全网结果充数，不编造。",
+  "repository": {
+    "url": "https://github.com/qinp38260-boop/vein-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cloud.ygwws.xyz/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <免费 API key>，在 https://cloud.ygwws.xyz/signup 领取（每月免费额度）",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
